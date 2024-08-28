@@ -9,5 +9,4 @@ server/__pycache__/*
 include/credentials.hh
 venv
 server/test.db
-html/
 latex/
