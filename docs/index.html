@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ESP32 MQTT IoT Communication: Main Page</title>
+<title>ESP32 MQTT IoT Communication: ESP32 IoT communication using MQTT</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -88,10 +88,67 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">ESP32 MQTT IoT Communication Documentation</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">ESP32 IoT communication using MQTT </div></div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_README"></a><a href="https://mxwlc.github.io/esp32_iot/">Documentation</a> </p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+About</h1>
+<p>The aim of the project was to communicate between an ESP32 microcontroller, a MQTT Broker Running on a raspberry pi and a desktop PC.</p>
+<h2><a class="anchor" id="autotoc_md2"></a>
+Technologies Used</h2>
+<p><b>Microcontroller</b></p><ul>
+<li>An <code>ESP32_DevKitc_v4</code> was used, this was chosen due to the inbuilt wifi and bluetooth capabilities</li>
+<li>The Arduino framework was chosen as I am far more comfortable with the Arduino framework over ESP-IDF</li>
+<li>All Code on the ESP32 is written in C++</li>
+<li>The following Dependancies were used<ul>
+<li><code>bblanchon/ArduinoJson@^7.1.0</code> For onboard JSON Encoding</li>
+<li><code>knolleary/PubSubClient@^2.8</code> for communicating with MQTT broker</li>
+</ul>
+</li>
+</ul>
+<p><b>MQTT Broker</b></p><ul>
+<li>The MQTT broker was run on a Raspberry Pi 3A+ using Mosquitto an open source MQTT broker</li>
+<li>The RPI is running PiOs Headlessly</li>
+</ul>
+<p><b>Database</b></p><ul>
+<li>The database is implemented using Sqlite3 this was chosen in order to prototype the system without having to Host a Database Server</li>
+<li>The entire backend is written in python and makes use of the following libraries<ul>
+<li><code>sqlite3</code> - C library that provides a lightweight disk based database</li>
+<li><code>json</code> - Library that can encode dictionaries into JSON Objects</li>
+<li><code>paho-mqtt</code> - Library that provides a class which enables applications to communicate with an MQTT Broker</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Usage</h1>
+<p>Once all the credentials are inplace and everything is setup all that needs to be done for the ESP32 to communicate with the RPI is just to Power the RPI and ESP32.</p>
+<p>In order to start inserting recieved readings and ID packets into the database simply run the following command from within the virtual environment. </p><div class="fragment"><div class="line">python server/mqtt_sub.py</div>
+</div><!-- fragment --><p> <img src="images/recieved.png" alt="Recieved Packets" class="inline"/></p>
+<p>Crude functionality to view the readings stored in the data base is available, simply run </p><div class="fragment"><div class="line">python server/plot.py</div>
+</div><!-- fragment --><p> <img src="images/randomwalk_output.jpg" alt="Sensor Plot" class="inline"/></p>
+<h1><a class="anchor" id="autotoc_md4"></a>
+How to Install and Run</h1>
+<p><b>Step 0</b> Install the prerequisites</p><ul>
+<li>Python</li>
+<li>PlatformIO</li>
+<li>C compiler</li>
+<li>Doxygen (Optional)</li>
+</ul>
+<p><b>Step 1</b> clone the Repository </p><div class="fragment"><div class="line">git clone https://github.com/mxwlc/esp32_iot.git</div>
+</div><!-- fragment --><p> <b>Step 2</b> Create a virtual Environment </p><div class="fragment"><div class="line">python -m venv .venv</div>
+<div class="line">cd .venv/scripts</div>
+<div class="line">source activate</div>
+</div><!-- fragment --><p> <b>Step 3</b> Install Python Libraries </p><div class="fragment"><div class="line">pip install -r requirements.txt</div>
+</div><!-- fragment --><p> <b>Step 4</b> Setup Mosquitto on a Raspberry Pi (<a href="https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi/">The Guide I used</a>)</p>
+<p><b>Step 5</b> Replace variables with the correct values (Sensitive data such as IPs, SSIDs and router passwords have been replaced by X's)</p>
+<p><b>Step 6</b> Using PlatformIO build and flash the firmware onto the ESP32</p>
+<p><b>Step 7</b> Run <code>server/db/db.py</code> to generate the database and <code><a class="el" href="mqtt__sub_8py.html">server/mqtt_sub.py</a></code> to connect to the database and input data</p>
+<h1><a class="anchor" id="autotoc_md5"></a>
+License</h1>
+<p>Distributed under the MIT Licesnse. See LICENSE.txt for more information. </p>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

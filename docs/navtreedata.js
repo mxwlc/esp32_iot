@@ -25,14 +25,7 @@
 var NAVTREE =
 [
   [ "ESP32 MQTT IoT Communication", "index.html", [
-    [ "ESP32 IoT communication using MQTT", "md_README.html", [
-      [ "About", "md_README.html#autotoc_md1", [
-        [ "Technologies Used", "md_README.html#autotoc_md2", null ]
-      ] ],
-      [ "Usage", "md_README.html#autotoc_md3", null ],
-      [ "How to Install and Run", "md_README.html#autotoc_md4", null ],
-      [ "License", "md_README.html#autotoc_md5", null ]
-    ] ],
+    [ "ESP32 IoT communication using MQTT", "index.html", "index" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
