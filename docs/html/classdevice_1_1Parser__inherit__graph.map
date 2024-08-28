@@ -1,0 +1,9 @@
+<map id="device::Parser" name="device::Parser">
+<area shape="rect" id="Node000001" title="Abstract Class Implementing Functions for Parsing Readings into JSON Objects." alt="" coords="149,5,263,31"/>
+<area shape="rect" id="Node000002" href="$classdevice_1_1Device.html" title=" " alt="" coords="5,79,124,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,39,89,81,87,76,170,34"/>
+<area shape="rect" id="Node000003" href="$classdevice_1_1Sensor.html" title="Class encapsulating logic for handling sensors connected to the Board." alt="" coords="147,79,265,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="209,44,209,79,203,79,203,44"/>
+<area shape="rect" id="Node000004" href="$classdevice_1_1SensorReading.html" title="Class encoding logic for encoding Sensor Readings into a Json oject." alt="" coords="289,79,459,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="247,34,348,76,345,81,244,38"/>
+</map>
