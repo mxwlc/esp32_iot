@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['random_5fwalk_0',['random_walk',['../namespacerandom__walk.html',1,'']]]
+  ['db_0',['db',['../namespacedb.html',1,'']]],
+  ['device_1',['device',['../namespacedevice.html',1,'']]],
+  ['device_5fwriter_2',['device_writer',['../namespacedevice__writer.html',1,'']]]
 ];

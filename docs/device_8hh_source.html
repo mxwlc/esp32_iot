@@ -5,10 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ESP32 MQTT Communications for Sensors and: lib/device/device.hh Source File</title>
+<title>ESP32 MQTT IoT Communication: lib/device/device.hh Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">ESP32 MQTT Communications for Sensors and
+   <div id="projectname">ESP32 MQTT IoT Communication
    </div>
   </td>
  </tr>
@@ -51,6 +55,23 @@ $(function() {
 $(document).ready(function() { init_codefold(0); });
 /* @license-end */
 </script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('device_8hh_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -72,16 +93,11 @@ $(document).ready(function() { init_codefold(0); });
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_656d951fc5379517fb176d670e542fc5.html">device</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">device.hh</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<a href="device_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef DEVICE_HH</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define DEVICE_HH</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#pragma once</span></div>
@@ -90,7 +106,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;map&gt;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span>device</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedevice.html">device</a></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// Parser Abstract</span></div>
@@ -159,22 +175,27 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>}; <span class="comment">// namespace device</span></div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassdevice_1_1Device_html"><div class="ttname"><a href="classdevice_1_1Device.html">device::Device</a></div><div class="ttdef"><b>Definition</b> device.hh:74</div></div>
-<div class="ttc" id="aclassdevice_1_1Device_html_a0b62a75eebc4797517a126dbe84544a2"><div class="ttname"><a href="classdevice_1_1Device.html#a0b62a75eebc4797517a126dbe84544a2">device::Device::get_address</a></div><div class="ttdeci">String get_address()</div><div class="ttdoc">Returns the IP address of the Board.</div><div class="ttdef"><b>Definition</b> device.cc:26</div></div>
-<div class="ttc" id="aclassdevice_1_1Device_html_a15fe8a179ca79c912ef38945748e7ecd"><div class="ttname"><a href="classdevice_1_1Device.html#a15fe8a179ca79c912ef38945748e7ecd">device::Device::parse</a></div><div class="ttdeci">JsonDocument parse()</div><div class="ttdoc">Encodes data readings/id object into a JSON object.</div><div class="ttdef"><b>Definition</b> device.cc:31</div></div>
-<div class="ttc" id="aclassdevice_1_1Device_html_a31fa030d3bce1278434e2e3530a86e7f"><div class="ttname"><a href="classdevice_1_1Device.html#a31fa030d3bce1278434e2e3530a86e7f">device::Device::add_sensor</a></div><div class="ttdeci">void add_sensor(Sensor _sensor)</div><div class="ttdoc">Adds A sensor object to the internal sensor vector.</div><div class="ttdef"><b>Definition</b> device.cc:46</div></div>
+<div class="ttc" id="aclassdevice_1_1Device_html_a0b62a75eebc4797517a126dbe84544a2"><div class="ttname"><a href="classdevice_1_1Device.html#a0b62a75eebc4797517a126dbe84544a2">device::Device::get_address</a></div><div class="ttdeci">String get_address()</div><div class="ttdoc">Returns the IP address of the Board.</div><div class="ttdef"><b>Definition</b> device.cc:39</div></div>
+<div class="ttc" id="aclassdevice_1_1Device_html_a15fe8a179ca79c912ef38945748e7ecd"><div class="ttname"><a href="classdevice_1_1Device.html#a15fe8a179ca79c912ef38945748e7ecd">device::Device::parse</a></div><div class="ttdeci">JsonDocument parse()</div><div class="ttdoc">Encodes data readings/id object into a JSON object.</div><div class="ttdef"><b>Definition</b> device.cc:44</div></div>
+<div class="ttc" id="aclassdevice_1_1Device_html_a31fa030d3bce1278434e2e3530a86e7f"><div class="ttname"><a href="classdevice_1_1Device.html#a31fa030d3bce1278434e2e3530a86e7f">device::Device::add_sensor</a></div><div class="ttdeci">void add_sensor(Sensor _sensor)</div><div class="ttdoc">Adds A sensor object to the internal sensor vector.</div><div class="ttdef"><b>Definition</b> device.cc:59</div></div>
 <div class="ttc" id="aclassdevice_1_1Parser_html"><div class="ttname"><a href="classdevice_1_1Parser.html">device::Parser</a></div><div class="ttdoc">Abstract Class Implementing Functions for Parsing Readings into JSON Objects.</div><div class="ttdef"><b>Definition</b> device.hh:27</div></div>
 <div class="ttc" id="aclassdevice_1_1Parser_html_a615b0f417a296b5824cf0da96eddfad5"><div class="ttname"><a href="classdevice_1_1Parser.html#a615b0f417a296b5824cf0da96eddfad5">device::Parser::parse</a></div><div class="ttdeci">virtual JsonDocument parse()=0</div><div class="ttdoc">Encodes data readings/id object into a JSON object.</div></div>
 <div class="ttc" id="aclassdevice_1_1Parser_html_abd5f1cb56f0bd3c19227b0ddae3270e2"><div class="ttname"><a href="classdevice_1_1Parser.html#abd5f1cb56f0bd3c19227b0ddae3270e2">device::Parser::get_address</a></div><div class="ttdeci">virtual String get_address()=0</div><div class="ttdoc">Returns the IP address of the Board.</div></div>
 <div class="ttc" id="aclassdevice_1_1SensorReading_html"><div class="ttname"><a href="classdevice_1_1SensorReading.html">device::SensorReading</a></div><div class="ttdoc">Class encoding logic for encoding Sensor Readings into a Json oject.</div><div class="ttdef"><b>Definition</b> device.hh:109</div></div>
-<div class="ttc" id="aclassdevice_1_1SensorReading_html_a11cb8bf4b1a94d070c1787878648aef6"><div class="ttname"><a href="classdevice_1_1SensorReading.html#a11cb8bf4b1a94d070c1787878648aef6">device::SensorReading::parse</a></div><div class="ttdeci">JsonDocument parse()</div><div class="ttdoc">Encodes data readings/id object into a JSON object.</div><div class="ttdef"><b>Definition</b> device.cc:91</div></div>
-<div class="ttc" id="aclassdevice_1_1SensorReading_html_afebb27cd16d2c6974857a292d17411c4"><div class="ttname"><a href="classdevice_1_1SensorReading.html#afebb27cd16d2c6974857a292d17411c4">device::SensorReading::get_address</a></div><div class="ttdeci">String get_address()</div><div class="ttdoc">Returns the IP address of the Board.</div><div class="ttdef"><b>Definition</b> device.cc:100</div></div>
+<div class="ttc" id="aclassdevice_1_1SensorReading_html_a11cb8bf4b1a94d070c1787878648aef6"><div class="ttname"><a href="classdevice_1_1SensorReading.html#a11cb8bf4b1a94d070c1787878648aef6">device::SensorReading::parse</a></div><div class="ttdeci">JsonDocument parse()</div><div class="ttdoc">Encodes data readings/id object into a JSON object.</div><div class="ttdef"><b>Definition</b> device.cc:104</div></div>
+<div class="ttc" id="aclassdevice_1_1SensorReading_html_afebb27cd16d2c6974857a292d17411c4"><div class="ttname"><a href="classdevice_1_1SensorReading.html#afebb27cd16d2c6974857a292d17411c4">device::SensorReading::get_address</a></div><div class="ttdeci">String get_address()</div><div class="ttdoc">Returns the IP address of the Board.</div><div class="ttdef"><b>Definition</b> device.cc:113</div></div>
 <div class="ttc" id="aclassdevice_1_1Sensor_html"><div class="ttname"><a href="classdevice_1_1Sensor.html">device::Sensor</a></div><div class="ttdoc">Class encapsulating logic for handling sensors connected to the Board.</div><div class="ttdef"><b>Definition</b> device.hh:47</div></div>
-<div class="ttc" id="aclassdevice_1_1Sensor_html_a8820efa1299023ad4e22eb56a457b01a"><div class="ttname"><a href="classdevice_1_1Sensor.html#a8820efa1299023ad4e22eb56a457b01a">device::Sensor::parse</a></div><div class="ttdeci">JsonDocument parse()</div><div class="ttdoc">Encodes data readings/id object into a JSON object.</div><div class="ttdef"><b>Definition</b> device.cc:68</div></div>
-<div class="ttc" id="aclassdevice_1_1Sensor_html_a921e497a75b10caf037fc18d060909b2"><div class="ttname"><a href="classdevice_1_1Sensor.html#a921e497a75b10caf037fc18d060909b2">device::Sensor::get_address</a></div><div class="ttdeci">String get_address()</div><div class="ttdoc">Returns the IP address of the Board.</div><div class="ttdef"><b>Definition</b> device.cc:60</div></div>
+<div class="ttc" id="aclassdevice_1_1Sensor_html_a8820efa1299023ad4e22eb56a457b01a"><div class="ttname"><a href="classdevice_1_1Sensor.html#a8820efa1299023ad4e22eb56a457b01a">device::Sensor::parse</a></div><div class="ttdeci">JsonDocument parse()</div><div class="ttdoc">Encodes data readings/id object into a JSON object.</div><div class="ttdef"><b>Definition</b> device.cc:81</div></div>
+<div class="ttc" id="aclassdevice_1_1Sensor_html_a921e497a75b10caf037fc18d060909b2"><div class="ttname"><a href="classdevice_1_1Sensor.html#a921e497a75b10caf037fc18d060909b2">device::Sensor::get_address</a></div><div class="ttdeci">String get_address()</div><div class="ttdoc">Returns the IP address of the Board.</div><div class="ttdef"><b>Definition</b> device.cc:73</div></div>
+<div class="ttc" id="anamespacedevice_html"><div class="ttname"><a href="namespacedevice.html">device</a></div><div class="ttdoc">Namespace containing functions that allow for th conversion of data into JSON Objects.</div><div class="ttdef"><b>Definition</b> device.cc:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_656d951fc5379517fb176d670e542fc5.html">device</a></li><li class="navelem"><a class="el" href="device_8hh.html">device.hh</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
 </body>
 </html>

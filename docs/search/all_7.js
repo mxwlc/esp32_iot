@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['page_0',['Main Page',['../md_lib_2device_2README.html',1,'']]],
-  ['parse_1',['parse',['../classdevice_1_1Parser.html#a615b0f417a296b5824cf0da96eddfad5',1,'device::Parser::parse()'],['../classdevice_1_1Sensor.html#a8820efa1299023ad4e22eb56a457b01a',1,'device::Sensor::parse()'],['../classdevice_1_1Device.html#a15fe8a179ca79c912ef38945748e7ecd',1,'device::Device::parse()'],['../classdevice_1_1SensorReading.html#a11cb8bf4b1a94d070c1787878648aef6',1,'device::SensorReading::parse()']]],
-  ['parser_2',['Parser',['../classdevice_1_1Parser.html',1,'device']]]
+  ['insert_0',['insert',['../classdevice__writer_1_1Writer.html#a7c764b276cd7184fdc715913de5d035c',1,'device_writer::Writer']]],
+  ['iot_20communication_20using_20mqtt_1',['ESP32 IoT communication using MQTT',['../md_README.html',1,'']]],
+  ['iteration_2',['iteration',['../classrandom__walk_1_1RandomWalk.html#a6e22367b696e8809d77967e64a56ce59',1,'random_walk::RandomWalk']]]
 ];

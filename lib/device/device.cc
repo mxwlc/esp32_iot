@@ -1,5 +1,18 @@
+/**
+ * @file device.cc
+ * @author Corey Maxwell (corey.maxwell18@proton.me)
+ * @brief Function declaration for device header
+ * @version 0.1
+ * @date 2024-08-28
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #include "device.hh"
 
+/**
+ * @brief Namespace containing functions that allow for th conversion of data into JSON Objects
+ */
 namespace device
 {
 Parser::~Parser()

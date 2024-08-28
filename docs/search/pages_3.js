@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['page_0',['Main Page',['../md_lib_2device_2README.html',1,'']]]
+  ['mqtt_0',['ESP32 IoT communication using MQTT',['../md_README.html',1,'']]]
 ];

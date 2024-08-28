@@ -8,7 +8,6 @@
 #include <vector>
 
 #include "constants.hh"
-#include "credentials.hh"
 #include "device.hh"
 #include "random_walk.hh"
 using namespace device;
@@ -17,18 +16,10 @@ using namespace random_walk;
 #define ONBOARDLED 2
 #define NUMBER_OF_SENSORS 1
 
-/*
- * --- TODO ---
- *  Possibly refactor how the Device objects are stored
- *  Generate device and sensor objects on startup
- *  Refactor the commencted block at (~51)
- *   Ideas
- *   - Include in .h file -> Code still in space
- *
- *
- *
- */
- 
+const String SSID = "XXXXXXXX";
+const String PASSWORD = "XXXXXXXX";
+const String BROKER_IP = "XX.XX.XX.XX";
+
 /**
  * @brief Struct Containing The Device and sensor Names and addresses
  */
@@ -63,16 +54,6 @@ Device dv(device_info->device_address.second, device_info->device_address.first)
 
 RandomWalk rw(15);
 
-/* Redundant ?
- * String dev_mac = WiFi.macAddress().c_str();
- * String sens_addr_1 = dev_mac + String(":01");
- * String sens_addr_2 = dev_mac + String(":02");
- * Sensor s1 = Sensor(String("Random Walk"), String("50/50 Chance of +/- 0.1"), String("degC"), sens_addr_1);
- * Sensor s2 = Sensor(String("Random Walk"), String("50/50 Chance of +/-  0.1"), String("cm"), sens_addr_2);
- * std::vector<Sensor> sv = {s1, s2};
- * Device dv = Device(dev_mac, "ESP32", sv);
- */
-
 WiFiClient espclient;
 PubSubClient client(espclient);
 
@@ -103,7 +84,7 @@ void setup_wifi()
 }
 /**
  * @brief Call back function for MQTT communication
- * 
+ *
  * @param topic MQTT Topic
  * @param payload Recieved Payload
  * @param length length of payload
@@ -136,31 +117,34 @@ void setup()
 
     // Wifi Setup -- Connects to wifi
 
-    //  setup_wifi();
+    setup_wifi();
 
     // MQTT Client
-    //  client.setServer(BROKER_IP, 1883);
-    //  client.setCallback(callback);
-    //  client.setBufferSize(1024);
-    //  client.setKeepAlive(7200);
-    //  while (!client.connected()) {
-    //    String client_id = "esp32-client-";
-    //    client_id += String(WiFi.macAddress());
-    //    Serial.printf("The client %s connects to the public MQTT broker\n",
-    //                  client_id.c_str());
-    //    if (client.connect(client_id.c_str())) {
-    //      Serial.println("Public EMQX MQTT broker connected");
-    //    } else {
-    //      Serial.print("failed with state ");
-    //      Serial.print(client.state());
-    //      delay(2000);
-    //    }
-    //  }
+    client.setServer(BROKER_IP, 1883);
+    client.setCallback(callback);
+    client.setBufferSize(1024);
+    client.setKeepAlive(7200);
+    while (!client.connected())
+    {
+        String client_id = "esp32-client-";
+        client_id += String(WiFi.macAddress());
+        Serial.printf("The client %s connects to the public MQTT broker\n", client_id.c_str());
+        if (client.connect(client_id.c_str()))
+        {
+            Serial.println("Public EMQX MQTT broker connected");
+        }
+        else
+        {
+            Serial.print("failed with state ");
+            Serial.print(client.state());
+            delay(2000);
+        }
+    }
     digitalWrite(ONBOARDLED, LOW);
 }
 /**
  * @brief After a delay send An Identification packet or after another delay send sensor readings object to MQTT Broker
- *  
+ *
  */
 void loop()
 {
@@ -199,7 +183,6 @@ void loop()
         Serial.print(" to Topic :");
         Serial.println(MQTT_TOPICS["readings"]);
     }
-    // Serial.print("[Serial] ");
-    // Serial.println(rw.get_price());
+
     rw.iteration();
 }

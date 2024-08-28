@@ -1,3 +1,13 @@
+/**
+ * @file random_walk.cc
+ * @author Corey Maxwell (corey.maxwell18@proton.me)
+ * @brief Function Declarations for the Random Walk Object
+ * @version 0.1
+ * @date 2024-08-28
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #include "random_walk.hh"
 namespace random_walk{
 RandomWalk::~RandomWalk()

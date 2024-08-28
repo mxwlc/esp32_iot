@@ -5,10 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ESP32 MQTT Communications for Sensors and: include/constants.hh Source File</title>
+<title>ESP32 MQTT IoT Communication: include/constants.hh Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">ESP32 MQTT Communications for Sensors and
+   <div id="projectname">ESP32 MQTT IoT Communication
    </div>
   </td>
  </tr>
@@ -51,6 +55,23 @@ $(function() {
 $(document).ready(function() { init_codefold(0); });
 /* @license-end */
 </script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('constants_8hh_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -72,31 +93,39 @@ $(document).ready(function() { init_codefold(0); });
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">constants.hh</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;map&gt;</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;Arduino.h&gt;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>String <span class="keyword">const</span> DEVICE_NAME = <span class="stringliteral">&quot;ESP32-devkit-V4&quot;</span>;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>String <span class="keyword">const</span> SENSOR_NAME = <span class="stringliteral">&quot;RANDOM WALK&quot;</span>;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keywordtype">int</span> <span class="keyword">const</span> NUMBER_OF_SENSORS  = 1;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> TIMER_DELAY_ID = 3600000;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> TIMER_DELAY_READINGS = 10000;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>std::map&lt;String, const char *&gt; MQTT_TOPICS = {std::pair&lt;String, const char *&gt;(String(<span class="stringliteral">&quot;readings&quot;</span>), <span class="stringliteral">&quot;esp32/walk&quot;</span>),</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                                         std::pair&lt;String, const char *&gt;(String(<span class="stringliteral">&quot;id&quot;</span>), <span class="stringliteral">&quot;esp32/id&quot;</span>)};</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<a href="constants_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;Arduino.h&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="constants_8hh.html#ac75437a7e7ae2ac38cd08957c7174617">   17</a></span>String <span class="keyword">const</span> <a class="code hl_variable" href="constants_8hh.html#ac75437a7e7ae2ac38cd08957c7174617">DEVICE_NAME</a> = <span class="stringliteral">&quot;ESP32-devkit-V4&quot;</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="constants_8hh.html#a09ecd17af5e28a1763869999d2903882">   21</a></span>String <span class="keyword">const</span> <a class="code hl_variable" href="constants_8hh.html#a09ecd17af5e28a1763869999d2903882">SENSOR_NAME</a> = <span class="stringliteral">&quot;RANDOM WALK&quot;</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="constants_8hh.html#ace58ad659a098ae405427c7689e0d124">   25</a></span><span class="keywordtype">int</span> <span class="keyword">const</span> <a class="code hl_variable" href="constants_8hh.html#ace58ad659a098ae405427c7689e0d124">NUMBER_OF_SENSORS</a>  = 1;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="constants_8hh.html#a4056ab96885bd8feb70c17a6bcff47f0">   30</a></span><span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_variable" href="constants_8hh.html#a4056ab96885bd8feb70c17a6bcff47f0">TIMER_DELAY_ID</a> = 3600000;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="constants_8hh.html#a9b1b0189fbc1dff68697d484242e15aa">   34</a></span><span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_variable" href="constants_8hh.html#a9b1b0189fbc1dff68697d484242e15aa">TIMER_DELAY_READINGS</a> = 10000;</div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="};">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="constants_8hh.html#af3b9b6ad44eabe58b3d64e4f2d543114">   38</a></span>std::map&lt;String, const char *&gt; <a class="code hl_variable" href="constants_8hh.html#af3b9b6ad44eabe58b3d64e4f2d543114">MQTT_TOPICS</a> = {std::pair&lt;String, const char *&gt;(String(<span class="stringliteral">&quot;readings&quot;</span>), <span class="stringliteral">&quot;esp32/walk&quot;</span>),</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                                         std::pair&lt;String, const char *&gt;(String(<span class="stringliteral">&quot;id&quot;</span>), <span class="stringliteral">&quot;esp32/id&quot;</span>)};</div>
+</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="ttc" id="aconstants_8hh_html_a09ecd17af5e28a1763869999d2903882"><div class="ttname"><a href="constants_8hh.html#a09ecd17af5e28a1763869999d2903882">SENSOR_NAME</a></div><div class="ttdeci">String const SENSOR_NAME</div><div class="ttdoc">The name of the sensor.</div><div class="ttdef"><b>Definition</b> constants.hh:21</div></div>
+<div class="ttc" id="aconstants_8hh_html_a4056ab96885bd8feb70c17a6bcff47f0"><div class="ttname"><a href="constants_8hh.html#a4056ab96885bd8feb70c17a6bcff47f0">TIMER_DELAY_ID</a></div><div class="ttdeci">const unsigned long TIMER_DELAY_ID</div><div class="ttdoc">The Delay (in ms) before the ESP32 sends out and identification packet.</div><div class="ttdef"><b>Definition</b> constants.hh:30</div></div>
+<div class="ttc" id="aconstants_8hh_html_a9b1b0189fbc1dff68697d484242e15aa"><div class="ttname"><a href="constants_8hh.html#a9b1b0189fbc1dff68697d484242e15aa">TIMER_DELAY_READINGS</a></div><div class="ttdeci">const unsigned long TIMER_DELAY_READINGS</div><div class="ttdoc">The delay (in ms) before the ESP32 send out Data Readings.</div><div class="ttdef"><b>Definition</b> constants.hh:34</div></div>
+<div class="ttc" id="aconstants_8hh_html_ac75437a7e7ae2ac38cd08957c7174617"><div class="ttname"><a href="constants_8hh.html#ac75437a7e7ae2ac38cd08957c7174617">DEVICE_NAME</a></div><div class="ttdeci">String const DEVICE_NAME</div><div class="ttdoc">The name of the Board.</div><div class="ttdef"><b>Definition</b> constants.hh:17</div></div>
+<div class="ttc" id="aconstants_8hh_html_ace58ad659a098ae405427c7689e0d124"><div class="ttname"><a href="constants_8hh.html#ace58ad659a098ae405427c7689e0d124">NUMBER_OF_SENSORS</a></div><div class="ttdeci">int const NUMBER_OF_SENSORS</div><div class="ttdoc">The numer of sensors connected to the board.</div><div class="ttdef"><b>Definition</b> constants.hh:25</div></div>
+<div class="ttc" id="aconstants_8hh_html_af3b9b6ad44eabe58b3d64e4f2d543114"><div class="ttname"><a href="constants_8hh.html#af3b9b6ad44eabe58b3d64e4f2d543114">MQTT_TOPICS</a></div><div class="ttdeci">std::map&lt; String, const char * &gt; MQTT_TOPICS</div><div class="ttdoc">Map containing the MQTT Topics:</div><div class="ttdef"><b>Definition</b> constants.hh:38</div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="constants_8hh.html">constants.hh</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['communication_0',['ESP32 MQTT communication',['../md_README.html',1,'']]]
+  ['communication_20using_20mqtt_0',['ESP32 IoT communication using MQTT',['../md_README.html',1,'']]]
 ];

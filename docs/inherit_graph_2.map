@@ -1,3 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classrandom__walk_1_1RandomWalk.html" title="A class containing the logic and data for a Random Walk." alt="" coords="5,5,209,31"/>
+<area shape="rect" id="Node000000" href="$classdevice__writer_1_1Writer.html" title="Abstract Class containing basic functions for inserting JSON objects ito a database." alt="" coords="5,55,159,80"/>
+<area shape="rect" id="Node000001" href="$classdevice__writer_1_1DeviceWriter.html" title="class representing an IoT device extends Writer" alt="" coords="214,5,413,31"/>
+<area shape="poly" id="edge4_Node000000_Node000001" title=" " alt="" coords="155,49,252,28,253,33,156,54"/>
+<area shape="rect" id="Node000002" href="$classdevice__writer_1_1ReadingsWriter.html" title="Class Representing readings recieved on a topic." alt="" coords="207,55,420,80"/>
+<area shape="poly" id="edge5_Node000000_Node000002" title=" " alt="" coords="172,65,206,65,206,70,172,70"/>
+<area shape="rect" id="Node000003" href="$classdevice__writer_1_1SensorWriter.html" title="Class represensting a Sensor Object." alt="" coords="215,104,412,129"/>
+<area shape="poly" id="edge6_Node000000_Node000003" title=" " alt="" coords="156,80,253,101,252,107,155,85"/>
 </map>

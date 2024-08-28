@@ -1,5 +1,5 @@
 /**
- * @file device.hpp
+ * @file device.hh
  * @author Corey Maxwell (corey.maxwell18@proton.me)
  * @brief Classes implementing logic for parsing Sensor Reading and ID Data into a JSON object
  * @version 0.1

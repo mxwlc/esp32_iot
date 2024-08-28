@@ -1,0 +1,9 @@
+<map id="device_writer.Writer" name="device_writer.Writer">
+<area shape="rect" id="Node000001" title="Abstract Class containing basic functions for inserting JSON objects ito a database." alt="" coords="259,5,412,31"/>
+<area shape="rect" id="Node000002" href="$classdevice__writer_1_1DeviceWriter.html" title="class representing an IoT device extends Writer" alt="" coords="5,79,204,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="286,37,143,81,141,76,284,32"/>
+<area shape="rect" id="Node000003" href="$classdevice__writer_1_1ReadingsWriter.html" title="Class Representing readings recieved on a topic." alt="" coords="229,79,442,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="338,44,338,79,333,79,333,44"/>
+<area shape="rect" id="Node000004" href="$classdevice__writer_1_1SensorWriter.html" title="Class represensting a Sensor Object." alt="" coords="466,79,663,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="386,32,528,76,527,81,385,37"/>
+</map>
