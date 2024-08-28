@@ -110,17 +110,44 @@ Technologies Used</h2>
 </ul>
 <p><b>MQTT Broker</b></p><ul>
 <li>The MQTT broker was run on a Raspberry Pi 3A+ using Mosquitto an open source MQTT broker</li>
+<li>The RPI is running PiOs Headlessly</li>
 </ul>
 <p><b>Database</b></p><ul>
 <li>The database is implemented using Sqlite3 this was chosen in order to prototype the system without having to Host a Database Server</li>
 <li>The entire backend is written in python and makes use of the following libraries<ul>
-<li>sqlite3 - C library that provides a lightweight disk based database</li>
-<li>json - Library that can encode dictionaries into JSON Objects</li>
-<li>paho-mqtt - Library that provides a class which enables applications to communicate with an MQTT Broker</li>
+<li><code>sqlite3</code> - C library that provides a lightweight disk based database</li>
+<li><code>json</code> - Library that can encode dictionaries into JSON Objects</li>
+<li><code>paho-mqtt</code> - Library that provides a class which enables applications to communicate with an MQTT Broker</li>
 </ul>
 </li>
 </ul>
-<p><b>Miscellaneous</b> </p>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Usage</h1>
+<p>Once all the credentials are inplace and everything is setup all that needs to be done for the ESP32 to communicate with the RPI is just to Power the RPI and ESP32.</p>
+<p>In order to start inserting recieved readings and ID packets into the database simply run the following command from within the virtual environment. </p><div class="fragment"><div class="line">python server/mqtt_sub.py</div>
+</div><!-- fragment --><p> <img src="images/recieved.png" alt="Recieved Packets" class="inline"/></p>
+<p>Crude functionality to view the readings stored in the data base is available, simply run </p><div class="fragment"><div class="line">python server/plot.py</div>
+</div><!-- fragment --><p> <img src="images/randomwalk_output.jpg" alt="Sensor Plot" class="inline"/></p>
+<h1><a class="anchor" id="autotoc_md4"></a>
+How to Install and Run</h1>
+<p><b>Step 0</b> Install the prerequisites</p><ul>
+<li>Python</li>
+<li>PlatformIO</li>
+<li>C compiler</li>
+<li>Doxygen (Optional)</li>
+</ul>
+<p><b>Step 1</b> clone the Repository </p><div class="fragment"><div class="line">git clone https://github.com/mxwlc/esp32_iot.git</div>
+</div><!-- fragment --><p> <b>Step 2</b> Create a virtual Environment </p><div class="fragment"><div class="line">python -m venv .venv</div>
+<div class="line">cd .venv/scripts</div>
+<div class="line">source activate</div>
+</div><!-- fragment --><p> <b>Step 3</b> Install Python Libraries </p><div class="fragment"><div class="line">pip install -r requirements.txt</div>
+</div><!-- fragment --><p> <b>Step 4</b> Setup Mosquitto on a Raspberry Pi (<a href="https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi/">The Guide I used</a>)</p>
+<p><b>Step 5</b> Replace variables with the correct values (Sensitive data such as IPs, SSIDs and router passwords have been replaced by X's)</p>
+<p><b>Step 6</b> Using PlatformIO build and flash the firmware onto the ESP32</p>
+<p><b>Step 7</b> Run <code>server/db/db.py</code> to generate the database and <code><a class="el" href="mqtt__sub_8py.html">server/mqtt_sub.py</a></code> to connect to the database and input data</p>
+<h1><a class="anchor" id="autotoc_md5"></a>
+License</h1>
+<p>Distributed under the MIT Licesnse. See LICENSE.txt for more information. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

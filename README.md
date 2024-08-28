@@ -32,13 +32,14 @@ In order to start inserting recieved readings and ID packets into the database s
 ```bash
 python server/mqtt_sub.py
 ```
-![Recieved](images/recieved.png)
+![Recieved Packets](images/recieved.png)
 
 Crude functionality to view the readings stored in the data base is available, simply run
 ```bash
 python server/plot.py
 ```
-![Plot](images/randomwalk_output.jpg)
+![Sensor Plot](images/randomwalk_output.jpg)
+
 ## How to Install and Run
 **Step 0** Install the prerequisites
 - Python 
